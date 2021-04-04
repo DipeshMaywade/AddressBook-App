@@ -120,27 +120,3 @@ const getInputValueById = (id) => {
     let value = document.querySelector(id).value;
     return value;
 }
-
-const resetForm = () => {
-    setValue('#name','')
-    unSetValue('[name=profile]');
-    unSetValue('[name=gender]');
-    unSetValue('[name=depratment]');
-    setValue('#salary','')
-    setValue('#notes','')
-    setValue('#day','1')
-    setValue('#month','05')
-    setValue('#year','2020')
-}
-
-const unSetValue = (propertyValue) => {
-    let allItems = document.querySelectorAll(propertyValue);
-    allItems.forEach(item => {
-        item.checked = false;
-    });
-}
-
-const setValue = (id, value) => {
-    const element = document.querySelector(id);
-    element.value = value;
-}
