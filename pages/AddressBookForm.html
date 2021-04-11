@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <link rel="stylesheet" href="..\css\addressBook_form.css">
     <title>AddressBook</title>
-    <script defer src="..\js\addressBook_form.js"></script>
     <script defer src="..\js\AddressBookDetails.js"></script>
+    <script defer src="..\js\addressBook_form.js"></script>
+    <script defer src="..\js\service.js"></script>
+
 </head>
 <body>
     <header class="header-content header" >
         <div class="logo-content">
-            <img src="..\assest\images\logo.png" alt="logo">
+            <img src="..\asset\icons\address-book-icon.png" alt="logo" width="40" height="50">
             <div>
                 <span class="emp-text">ADDRESS</span><br>
                 <span class="emp-text emp-payroll">BOOK</span>
@@ -22,11 +24,11 @@
     </header>
     
     <div class="form-content">
-        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save(event)">
             <div class="cross">
                 <button class="crossButton"><a href="./home.html" style="color: white; text-decoration: none;">X</a></button>
             </div>
-            <div class="form-head">AddressBook Form
+            <div class="form-head">ADDRESS BOOK
             </div>
             <div class="row-content">
                     <input class="input" type="text" id="name" name="name"

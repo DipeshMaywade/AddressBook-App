@@ -30,7 +30,7 @@ body{
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
+    color: rgb(36, 106, 212);
     text-transform: capitalize;
 }
 
@@ -62,13 +62,15 @@ body{
 .form-head{
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
-    color: #42515f;
+    color: #ffffff;
+    border: red;
+    text-decoration: brown;
     text-transform: capitalize;
     opacity: 1;
     padding-bottom: 20px;
     text-align: center;
     margin-bottom: 60px;
-    background-color: lightblue;
+    background-color: rgb(139, 32, 238);
 }
 
 .row-content{
@@ -182,7 +184,7 @@ error-output{
     display: block;
     border-radius: 50%;
     border: none;
-    background-color: blue;
+    background-color:rgb(221, 11, 11);
     padding: 14px 14px;
     font-size: 16px;
     cursor: pointer;
